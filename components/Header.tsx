@@ -17,26 +17,31 @@ function Header({}: Props) {
       >
         <SocialIcon
           url="http://www.linkedin.com/in/stephan-ramalho"
-          fgColor="purple"
+          fgColor="#8155BA"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://github.com/sramalho94"
-          fgColor="purple"
+          fgColor="#8155BA"
           bgColor="transparent"
         />
       </motion.div>
-      <div className="flex flex-row items-center text-ebony">
+      <motion.div
+        className="flex flex-row items-center text-ebony"
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
+      >
         <SocialIcon
           className="cursor-pointer"
           network="email"
-          fgColor="purple"
+          fgColor="#8155BA"
           bgColor="transparent"
         />
         <p className="uppercase hidden md:inline-flex text-sm text-ebony">
           Get in Touch
         </p>
-      </div>
+      </motion.div>
     </header>
   )
 }
