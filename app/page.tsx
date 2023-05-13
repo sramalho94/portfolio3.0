@@ -4,11 +4,11 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="h-screen flex-col bg-ebony text-violet">
+    <main className="h-screen flex-col bg-ebony text-violet snap-y snap-mandatory overflow-scroll z-0">
       {/* header */}
       <Header />
       {/* Hero */}
-      <section id="hero">
+      <section id="hero" className="snap-center">
         <div>
           <Hero />
         </div>
