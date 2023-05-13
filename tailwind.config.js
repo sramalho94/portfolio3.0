@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,7 +11,10 @@ module.exports = {
         ebony: '#281C2D',
         'purple-haze': '#BEAFC2',
         'port-purple': '#695E93'
-      }
+      },
+      borderColor: (theme) => ({
+        ...theme('colors')
+      })
     }
   },
   plugins: []
