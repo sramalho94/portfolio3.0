@@ -40,10 +40,10 @@ const Hero = (props: Props) => {
           </div>
 
           <div>
-            <button>AAbout</button>
-            <button>Experience</button>
-            <button>Skills</button>
-            <button>Projects</button>
+            <button className="heroButton">AAbout</button>
+            <button className="heroButton">Experience</button>
+            <button className="heroButton">Skills</button>
+            <button className="heroButton">Projects</button>
           </div>
         </div>
       </div>
