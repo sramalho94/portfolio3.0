@@ -15,7 +15,7 @@ const BackgroundCircle = (props: Props) => {
       }}
       transition={{ duration: 2.5 }}
     >
-      <div className="absolute border border-port-purple rounded-full h-[200px] w-[200px] animate-ping" />
+      <div className="absolute border border-purple-haze rounded-full h-[200px] w-[200px] animate-ping" />
       <div className="rounded-full border border-port-purple h-[300px] w-[300px] absolute" />
       <div className="rounded-full border border-port-purple h-[500px] w-[500px] absolute" />
       <div className="rounded-full border border-purple-haze opacity-20 h-[650px] w-[650px] animate-pulse" />

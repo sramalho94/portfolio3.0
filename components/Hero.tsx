@@ -4,6 +4,7 @@ import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircle from './BackgroundCircle'
 import Image from 'next/image'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -29,7 +30,7 @@ const Hero = (props: Props) => {
             width={128}
             height={128}
           />
-          <div>
+          <div className="z-20">
             <h2 className="text-sm uppercase text-violet pt-3 tracking-[13px] md:tracking-[15px]">
               Software Engineer
             </h2>
@@ -39,11 +40,19 @@ const Hero = (props: Props) => {
             </h1>
           </div>
 
-          <div>
-            <button className="heroButton">AAbout</button>
-            <button className="heroButton">Experience</button>
-            <button className="heroButton">Skills</button>
-            <button className="heroButton">Projects</button>
+          <div className="pt-5">
+            <Link href="#about">
+              <button className="heroButton">About</button>
+            </Link>
+            <Link href="#experience">
+              <button className="heroButton">Experience</button>
+            </Link>
+            <Link href="#skills">
+              <button className="heroButton">Skills</button>
+            </Link>
+            <Link href="#projects">
+              <button className="heroButton">Projects</button>
+            </Link>
           </div>
         </div>
       </div>
