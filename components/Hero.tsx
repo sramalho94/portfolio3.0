@@ -41,12 +41,12 @@ const Hero = (props: Props) => {
           </div>
 
           <div className="pt-5">
-            <Link href="#about">
+            <a href="#about">
               <button className="heroButton">About</button>
-            </Link>
-            <Link href="#experience">
+            </a>
+            <a href="#experience">
               <button className="heroButton">Experience</button>
-            </Link>
+            </a>
             <Link href="#skills">
               <button className="heroButton">Skills</button>
             </Link>
