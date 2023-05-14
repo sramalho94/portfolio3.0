@@ -4,7 +4,7 @@
 
 @layer components {
   .heroButton {
-    @apply px-6 py-2 border-transparent border-2 uppercase text-sm tracking-widest text-port-purple transition-all;
+    @apply py-2 px-2 border-transparent border-2 uppercase text-sm  text-port-purple transition-all md:px-6 md:tracking-widest;
   }
   .heroButton:hover {
     @apply border-violet text-violet;
