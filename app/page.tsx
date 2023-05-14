@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       {/* Contact me */}
-      <section>
+      <section id="contact" className="snap-start">
         <Contact />
       </section>
     </main>
