@@ -9,7 +9,7 @@ import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
-    <main className="h-screen flex-col bg-ebony text-violet snap-y snap-mandatory overflow-scroll z-0">
+    <main className="h-screen flex-col bg-ebony text-violet snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 ">
       {/* header */}
       <Header />
 
