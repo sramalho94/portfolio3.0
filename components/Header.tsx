@@ -38,7 +38,7 @@ function Header({}: Props) {
           fgColor="#8155BA"
           bgColor="transparent"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-ebony">
+        <p className="uppercase hidden md:inline-flex text-sm text-violet">
           Get in Touch
         </p>
       </motion.div>
