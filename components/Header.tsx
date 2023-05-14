@@ -26,6 +26,7 @@ function Header({}: Props) {
           bgColor="transparent"
         />
       </motion.div>
+
       <motion.div
         className="flex flex-row items-center text-ebony"
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
@@ -37,6 +38,7 @@ function Header({}: Props) {
           network="email"
           fgColor="#8155BA"
           bgColor="transparent"
+          url="#contact"
         />
         <p className="uppercase hidden md:inline-flex text-sm text-violet">
           Get in Touch
