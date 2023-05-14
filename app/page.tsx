@@ -6,10 +6,11 @@ import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="h-screen flex-col bg-ebony text-violet snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 ">
+    <main className="h-screen flex-col bg-ebony text-violet snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-purple-haze/20 scrollbar-thumb-port-purple/80">
       {/* header */}
       <Header />
 
@@ -44,6 +45,20 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
+
+      <a href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center ">
+            <Image
+              src="/logo.png"
+              alt="logo"
+              height={64}
+              width={64}
+              className="h-14 w-14 rounded-full filter grayscale hover:grayscale-0 border border-purple-haze opacity-20 animate-pulse"
+            />
+          </div>
+        </footer>
+      </a>
     </main>
   )
 }
