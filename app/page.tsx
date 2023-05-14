@@ -3,6 +3,7 @@ import Hero from '@/components/Hero'
 import Image from 'next/image'
 import About from '@/components/About'
 import Experience from '@/components/Experience'
+import Skills from '@/components/Skills'
 
 export default function Home() {
   return (
@@ -28,6 +29,9 @@ export default function Home() {
       </section>
 
       {/* Skills */}
+      <section id="skills" className="snap-start">
+        <Skills />
+      </section>
 
       {/* Projects */}
 
