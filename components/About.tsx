@@ -8,7 +8,12 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <div className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+    <motion.div
+      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+    >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-2xl">
         About
       </h3>
@@ -30,7 +35,7 @@ const About = (props: Props) => {
         </h4>
         <p className="text-base md:text-lg">{`I'm Stephan D. Ramalho, a Queens-based Fullstack Software Engineer. Starting with a history degree from Fordham University, and transitioning through a customer-focused sales role, I found my passion in software engineering at General Assembly. Now a freelance developer, I prioritize user-friendly applications and teamwork. Away from coding, I delve into PC and PS5 gaming, enhancing my creative approach to tech solutions. I'm eager to bring my unique experience and passion to future collaborations.`}</p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
